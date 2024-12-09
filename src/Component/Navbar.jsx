@@ -52,6 +52,7 @@ function Navbar() {
         <ul className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 text-center py-4 md:py-0">
           <li>
             <Link
+              offset={-100} 
               to="biography"
               smooth={true}
               duration={500}
@@ -69,6 +70,7 @@ function Navbar() {
               to="services"
               smooth={true}
               duration={500}
+              offset={-100} 
               className="relative  cursor-pointer group"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -83,6 +85,7 @@ function Navbar() {
               to="portfolio"
               smooth={true}
               duration={500}
+              offset={-100} 
               className="relative  cursor-pointer group"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -97,6 +100,7 @@ function Navbar() {
               to="contact"
               smooth={true}
               duration={500}
+              offset={-100} 
               className="relative  cursor-pointer group"
               onClick={() => setIsMenuOpen(false)}
             >

@@ -6,7 +6,7 @@ function Biography() {
 
     const cv = "/cv.pdf";
     return (
-        <div className='w-[90%]  mx-auto my-8' data-aos="fade-up" data-aos-duration="1000">
+        <div className='w-[90%]  mx-auto my-8 ' data-aos="fade-up" data-aos-duration="1000">
             <p className='text-main2 opacity-60 text-base w-full text-center'>BIOGRAPHY</p>
             <h2 className='text-4xl md:text-6xl font-bold text-white font-outfit text-center'>Who am I ?</h2>
             <div className='w-[4px] h-[4vh] md:h-[6vh] bg-main2 justify-center items-center mx-auto my-4'></div>
