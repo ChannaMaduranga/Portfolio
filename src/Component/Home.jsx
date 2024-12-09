@@ -13,7 +13,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 
 function Home() {
-  const cv = "/cv.pdf";
+  const cv = "/Portfolio/cv.pdf";
 
   // Scroll to top function
   const scrollToTop = () => {
