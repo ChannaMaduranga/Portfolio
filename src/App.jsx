@@ -1,15 +1,13 @@
-import { useState,useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './App.css'
-import Home from './Component/Home'
-import Navbar from './Component/Navbar'
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Home from './Component/Home';
+import Navbar from './Component/Navbar';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-function App() {
-
+function AppContent() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -17,15 +15,19 @@ function App() {
   return (
     <>
       <Navbar />
-      <Router>
-        <Routes>
-
-          <Route path="/" element={<Home />} />
-
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
+  );
+}
+
+export default App;
