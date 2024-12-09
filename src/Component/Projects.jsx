@@ -22,7 +22,7 @@ function Projects() {
         }
     };
     return (
-        <div className='bg-[#22211e] w-full rounded-t-[50px] md:rounded-t-[150px] md:p-16 p-4'>
+        <div className='bg-[#22211e] w-full rounded-t-[50px] md:rounded-t-[150px] md:p-16 p-4 '>
             <div data-aos="fade-up" data-aos-duration="1000">
                 <p className='text-main2 opacity-60 text-base w-full text-center'>PORTFOLIO</p>
                 <h2 className='text-4xl md:text-6xl font-bold text-white font-outfit text-center'>Latest Projects</h2>
@@ -30,21 +30,21 @@ function Projects() {
             </div>
             <div className='w-full md:w-[50%] mx-auto px-2 py-2   md:h-[10vh] border-2 border-main2 rounded-full items-center flex border-opacity-40 font-poppins' data-aos="fade-up" data-aos-duration="1000">
                 <div
-                    className={`w-auto mx-auto p-2 md:h-[8vh] ${active === 'web' ? 'bg-main2 text-black' : 'text-main2'
+                    className={`w-1/3 mx-auto p-2 md:h-[8vh] ${active === 'web' ? 'bg-main2 text-black' : 'text-main2'
                         }  rounded-full justify-center px-8 flex items-center font-semibold text-center text-sm md:text-xl cursor-pointer`}
                     onClick={() => setActive('web')}
                 >
                     Web Projects
                 </div>
                 <div
-                    className={`w-auto mx-auto p-2 md:h-[8vh]  ${active === 'photography' ? 'bg-main2 text-black' : 'text-main2'
+                    className={`w-1/3 mx-auto p-2 md:h-[8vh]  ${active === 'photography' ? 'bg-main2 text-black' : 'text-main2'
                         }  rounded-full justify-center px-8 flex items-center font-semibold text-center text-sm md:text-xl cursor-pointer`}
                     onClick={() => setActive('photography')}
                 >
                     Photography Projects
                 </div>
                 <div
-                    className={`w-auto  p-2 md:h-[8vh]   ${active === 'mobile' ? 'bg-main2 text-black' : 'text-main2'
+                    className={`w-1/3  p-2 md:h-[8vh]   ${active === 'mobile' ? 'bg-main2 text-black' : 'text-main2'
                         }  rounded-full justify-center px-8 flex items-center font-semibold text-center text-sm md:text-xl cursor-pointer`}
                     onClick={() => setActive('mobile')}
                 >

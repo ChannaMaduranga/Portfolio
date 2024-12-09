@@ -24,7 +24,7 @@ function Home() {
   };
   return (
     <div className="h-full w-full bg-black">
-      <div className="h-full w-[90vw] mx-auto bg-main1  md:flex">
+      <div className="h-[100vh] w-[90vw] mx-auto bg-main1  md:flex">
 
         {/* left section */}
         <div className='md:w-1/3 md:h-[100vh] pt-[10vh] md:pt-0  justify-center flex flex-col z-40 ' data-aos="fade-up" data-aos-duration="1000">
