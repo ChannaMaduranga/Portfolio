@@ -27,7 +27,7 @@ function Home() {
       <div className="h-full w-[90vw] mx-auto bg-main1  md:flex">
 
         {/* left section */}
-        <div className='md:w-1/3 md:h-[100vh] pt-[10vh] md:pt-0  justify-center flex flex-col ' data-aos="fade-up" data-aos-duration="1000">
+        <div className='md:w-1/3 md:h-[100vh] pt-[10vh] md:pt-0  justify-center flex flex-col z-40 ' data-aos="fade-up" data-aos-duration="1000">
           <h2 className='text-6xl md:text-8xl text-white font-bold'>
             Hello<span className='text-main2'>.</span>
           </h2>
@@ -40,7 +40,7 @@ function Home() {
           </div>
 
 
-          <div className='hidden md:block py-4 bg-main2 border-2 text-black border-main2 rounded-md w-[50%] z-10 hover:bg-transparent hover:border-2 hover:border-main2  hover:text-main2  cursor-pointer'>
+          <div className='hidden  md:block py-4 bg-main2 border-2 text-black border-main2 rounded-md w-[50%] z-50 hover:bg-transparent hover:border-2 hover:border-main2  hover:text-main2  cursor-pointer'>
             <a
               href={cv}
               download="Channa_Maduranga_CV.pdf" // downloaded file name
@@ -65,7 +65,10 @@ function Home() {
                 to="contact"
                 smooth={true}
                 duration={500}>
-                <h3 className='text-main2 text-xl font-semibold flex gap-4 items-center'>Let's Talk <span className='text-2xl'><FaArrowRightLong /></span></h3></Link>
+                <h3 className='text-main2 text-xl font-semibold flex gap-4 items-center'>Let's Talk  <span
+                  className="text-2xl transition-transform duration-300 transform group-hover:translate-x-2 hover:text-white"
+                ><FaArrowRightLong /></span></h3>
+              </Link>
             </div>
           </div>
 
@@ -97,11 +100,11 @@ function Home() {
               to="contact"
               smooth={true}
               duration={500}>
-              <h3 className='text-main2 text-3xl font-semibold flex gap-4 items-center'>Let's Talk <span className='text-5xl'><FaArrowRightLong /></span></h3></Link>
+              <h3 className='text-main2 text-3xl font-semibold flex gap-4 items-center cursor-pointer'>Let's Talk <span className='text-5xl'><FaArrowRightLong /></span></h3></Link>
           </div>
         </div>
 
-        <div className=' absolute mx-auto w-[90%] bottom-0 h-[40vh] bg-gradient-to-t from-black to-transparent'></div>
+        <div className=' absolute mx-auto w-[90%] bottom-0 h-[25vh] bg-gradient-to-t from-black to-transparent'></div>
 
 
       </div>

@@ -27,11 +27,11 @@ function Navbar() {
   return (
     <nav
       className={`w-full z-50 fixed top-0 left-0 flex items-center justify-between h-16 px-6 md:px-24 py-4 md:py-12 font-poppins transition-all duration-300 ${
-        isScrolled ? 'bg-main2 text-black' : 'bg-transparent text-main2'
+        isScrolled ? 'bg-main2 text-black ' : 'bg-transparent text-main2'
       }`}
     >
       
-      <div className="text-2xl font-bold">Portfolio</div>
+      <a href="/"><div className="text-2xl font-bold">Portfolio</div></a>
 
       {/* Menu Icon  Mobile */}
       <div
@@ -55,11 +55,13 @@ function Navbar() {
               to="biography"
               smooth={true}
               duration={500}
-              className="relative hover:text-black cursor-pointer group"
+              className="relative  cursor-pointer group"
               onClick={() => setIsMenuOpen(false)} // Close menu on click
             >
               About me
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5"></span>
+              <span className={`absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5  ${
+        isScrolled ? 'bg-black  ' : 'bg-main2'
+      }`}></span>
             </Link>
           </li>
           <li>
@@ -67,11 +69,13 @@ function Navbar() {
               to="services"
               smooth={true}
               duration={500}
-              className="relative hover:text-black cursor-pointer group"
+              className="relative  cursor-pointer group"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5"></span>
+              <span className={`absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5  ${
+        isScrolled ? 'bg-black  ' : 'bg-main2'
+      }`}></span>
             </Link>
           </li>
           <li>
@@ -79,11 +83,13 @@ function Navbar() {
               to="portfolio"
               smooth={true}
               duration={500}
-              className="relative hover:text-black cursor-pointer group"
+              className="relative  cursor-pointer group"
               onClick={() => setIsMenuOpen(false)}
             >
               Portfolio
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5"></span>
+              <span className={`absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5  ${
+        isScrolled ? 'bg-black  ' : 'bg-main2'
+      }`}></span>
             </Link>
           </li>
           <li>
@@ -91,11 +97,13 @@ function Navbar() {
               to="contact"
               smooth={true}
               duration={500}
-              className="relative hover:text-black cursor-pointer group"
+              className="relative  cursor-pointer group"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5"></span>
+              <span className={`absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:h-0.5  ${
+        isScrolled ? 'bg-black  ' : 'bg-main2'
+      }`}></span>
             </Link>
           </li>
         </ul>
