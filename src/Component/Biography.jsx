@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa6";
 
 function Biography() {
 
-    const cv = "/cv.pdf";
+    const cv = "/Portfolio/cv.pdf";
     return (
         <div className='w-[90%]  mx-auto my-8 ' data-aos="fade-up" data-aos-duration="1000">
             <p className='text-main2 opacity-60 text-base w-full text-center'>BIOGRAPHY</p>
