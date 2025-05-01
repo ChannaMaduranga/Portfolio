@@ -67,7 +67,7 @@ function PhotographyProjects() {
                 <div className='md:w-1/2 md:h-full justify-center items-center flex-col mt-4 md:p-16'>
 
                     <h2 className='text-main2 text-xl md:text-2xl font-semibold'>Photography Projects</h2>
-                    <h2 className='text-white text-2xl md:text-4xl font-semibold py-2 md:py-4'>Batch Photo Day </h2>
+                    <h2 className='text-white text-2xl md:text-4xl font-semibold py-2 md:py-4'>Batch Photo </h2>
                     <p className='text-main2 opacity-60 text-sm md:text-base md:py-8'>A vibrant and unforgettable photo day for the university batch, filled with smiles and cherished moments. I captured group portraits, candid interactions, and the joyous spirit of friends celebrating their journey together.</p>
                     <p className='text-white font-semibold py-4'>- Follow link -</p>
 

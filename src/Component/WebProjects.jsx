@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaEarthAmericas } from "react-icons/fa6";
 import mock1 from "../assets/Image/projects/mock1.png";
 import mock2 from "../assets/Image/projects/mock2.png";
+import mock3 from "../assets/Image/projects/mock3.jpg"
 
 function WebProjects() {
     return (
@@ -36,6 +37,22 @@ function WebProjects() {
                     <p className='text-white font-semibold pt-8 md:pt-2'>- Follow links -</p>
                     <p className='text-main2 text-sm md:text-lg flex gap-4 items-center py-2'><FaGithub /> <a href="https://github.com/ChannaMaduranga/Camera-Rent-House">Camera rent Shop Github Repository</a> </p>
                     <p className='text-main2 text-sm md:text-lg flex gap-4 items-center'><FaEarthAmericas /> <a href="https://channamaduranga.github.io/Camera-Rent-House/">camera rent shop web site</a> </p>
+                </div>
+            </div>
+
+            <div className='w-full md:p-16 md:flex md:h-[90vh] mt-8 md:mt-2'>
+                <div className='md:w-1/2 h-full justify-center items-center flex  bg-blue-200 bg-opacity-20 rounded-3xl  '>
+                    <img src={mock3} alt="" className='w-[80%]  mx-auto rounded-3xl' />
+
+                </div>
+                <div className='md:w-1/2 h-full justify-center items-center flex-col p-4 pt-8  md:p-16'>
+                    <h2 className='text-main2 text-xl md:text-2xl font-semibold'>WEB PROJECTS</h2>
+                    <h2 className='text-white text-2xl md:text-4xl font-semibold py-4'>Randy's Coffee House</h2>
+                    <p className='text-main2 text-sm md:text-base opacity-60  md:py-8'>Randy's Coffee House website offers a seamless way for customers to explore the menu, place orders, view customer feedback, and stay connected with the café. Built using React.js for a dynamic user experience and styled with Tailwind CSS for a clean, responsive design. The site also includes a dedicated contact section for inquiries and customer communication.</p>
+
+                    <p className='text-white font-semibold pt-8 md:pt-2'>- Follow links -</p>
+                    <p className='text-main2 text-sm md:text-lg flex gap-4 items-center py-2'><FaGithub /> <a href="https://github.com/ChannaMaduranga/Randy-s-CoffeeShop/">Randy's Coffee House Github Repository</a> </p>
+                    <p className='text-main2 text-sm md:text-lg flex gap-4 items-center'><FaEarthAmericas /> <a href="https://channamaduranga.github.io/Randy-s-CoffeeShop/">Randy's web site</a> </p>
                 </div>
             </div>
         </div>
